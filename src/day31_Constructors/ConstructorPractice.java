@@ -1,4 +1,4 @@
-package day37_Inheritance;
+package day31_Constructors;
 
 class A{
     public A(int a){
