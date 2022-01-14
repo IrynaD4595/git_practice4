@@ -47,6 +47,17 @@ public class Cydeo {
 
         System.out.println("---------------------------------");
 
+        teacher.eat();
+        teacher.drink();
+        teacher.sleep();
+
+        System.out.println("---------------------------------");
+
+        student.eat();
+        student.drink();
+        student.sleep();
+        student.study();
+
 
 
 
