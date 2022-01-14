@@ -33,4 +33,8 @@ public class Shape {
     public double perimeter(){
         return 0;
     }
+
+    public String toString() {
+        return super.toString();
+    }
 }
