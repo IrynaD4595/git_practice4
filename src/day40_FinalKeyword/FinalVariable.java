@@ -3,6 +3,12 @@ package day40_FinalKeyword;
 public class FinalVariable {
 
     final String birthDay;
+    final static String name;
+
+
+    static {
+        name = "Batch 25";
+    }
 
     public FinalVariable(String birthDay) {
         this.birthDay = birthDay;
@@ -25,8 +31,12 @@ public class FinalVariable {
         System.out.println("----------------------------------");
 
 
-        FinalVariable obj = new FinalVariable("May/04");
+        FinalVariable obj = new FinalVariable("May/04");  // final variables can not be reassigned
         System.out.println(obj.birthDay);
+
+        System.out.println("----------------------------------");
+
+        System.out.println(FinalVariable.name);
 
 
 
