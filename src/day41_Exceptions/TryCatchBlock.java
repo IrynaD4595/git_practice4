@@ -58,6 +58,8 @@ public class TryCatchBlock {
 
         System.out.println("Test4 started");
 
+        System.out.println("--------------------------------------------");
+
 
 
 
