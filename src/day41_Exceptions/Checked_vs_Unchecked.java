@@ -34,10 +34,11 @@ public class Checked_vs_Unchecked {
         // CHECKED Exception:
 
         System.out.println("Hello");
-        //Thread.sleep(3000);
+        //Thread.sleep(3000);  // checked
         System.out.println("Cydeo");
 
         //FileInputStream file = new FileInputStream("path of the file");
+        System.out.println("Java".charAt(1000));  // unchecked
 
 
 
