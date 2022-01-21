@@ -1,5 +1,8 @@
 package day41_Exceptions;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
 public class TryCatchBlock {
 
     public static void main(String[] args) {
@@ -27,7 +30,7 @@ public class TryCatchBlock {
 
         try {
 
-            System.out.println(numbers[200]);
+            System.out.println(numbers[2]);
 
             System.out.println("Try Block");
 
@@ -60,8 +63,24 @@ public class TryCatchBlock {
 
         System.out.println("--------------------------------------------");
 
+        System.out.println("Hello");
 
 
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("Cydeo");
+
+        System.out.println("---------------------------------------------");
+
+        try {
+            FileInputStream file = new FileInputStream("File path");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
 
     }
