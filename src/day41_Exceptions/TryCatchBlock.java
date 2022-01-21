@@ -33,13 +33,30 @@ public class TryCatchBlock {
 
         }catch (RuntimeException e){
 
-            System.out.println("Catch Block");
+            e.printStackTrace();
 
-            System.out.println("Null Pointer exception was occurred");
+            //System.out.println(e.getMessage());
+
+
         }
 
         System.out.println("Test2 Completed");
 
+        System.out.println("-------------------------------------------");
+
+        System.out.println("Test3 started");
+
+        try {
+
+            System.out.println("Cydeo".substring(2, 0));
+
+        }catch (RuntimeException e){
+
+            e.printStackTrace();
+
+        }
+
+        System.out.println("Test4 started");
 
 
 
