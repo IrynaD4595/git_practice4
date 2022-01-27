@@ -5,15 +5,19 @@ import java.io.FileNotFoundException;
 
 public class DisadvantageOfThrowsKeyword2 {
 
-    public static void main(String[] args) throws InterruptedException, NullPointerException{
+    public static void main(String[] args) throws InterruptedException{
 
         method1();
         method2();
         method3();
 
         String str = null;
-        System.out.println(str.charAt(0));
+        try {
+            System.out.println(str.charAt(0));
 
+        }catch (RuntimeException e){
+            e.printStackTrace();
+        }
 
 
     }
