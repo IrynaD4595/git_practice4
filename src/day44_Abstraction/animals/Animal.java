@@ -1,6 +1,6 @@
 package day44_Abstraction.animals;
 
-public class Animal {
+public abstract class Animal {
 
     private String name;
     private final String breed;
@@ -9,10 +9,10 @@ public class Animal {
     private String size;
     private final String color;
 
-    public final static boolean canBreath;
+    public final static boolean canBreathe;
   static {
-      canBreath = true;
-     if(canBreath== false){
+      canBreathe = true;
+     if(canBreathe== false){
          throw new RuntimeException("Invalid");
      }
   }
@@ -68,7 +68,11 @@ public class Animal {
         this.size = size;
     }
 
-    public void eat(){}
+    public abstract void eat();
 
-    public void drink(){}
+    public final void drink(){
+        System.out.println(name + " is drinking.");
+    }
+
+
 }
