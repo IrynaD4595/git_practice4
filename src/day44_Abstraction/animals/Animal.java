@@ -12,6 +12,9 @@ public class Animal {
     public final static boolean canBreath;
   static {
       canBreath = true;
+     if(canBreath== false){
+         throw new RuntimeException("Invalid");
+     }
   }
 
     public Animal(String name, String breed, char gender, int age, String size, String color) {
