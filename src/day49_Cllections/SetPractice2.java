@@ -18,7 +18,7 @@ public class SetPractice2 {
 
         String[] array = {"A", "A", "B", "C"};
 
-        
+
 
 
 
