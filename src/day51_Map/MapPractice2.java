@@ -36,7 +36,7 @@ public class MapPractice2 {
 
 
         System.out.println(name1);
-        
+
 
     }
 
